@@ -1,15 +1,14 @@
 import React from 'react';
 import {Navbar, Home} from './components'
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import './App.css';
 
 const App = () => {
     return (
-        <Router>
-            <Navbar/>
-            <Routes>
-                <Route path='/' element={<Home/>}/>
-            </Routes>
-        </Router>
+        <div className='App'>
+            <div className='gradient__bg'>
+                <Navbar/>
+            </div>
+        </div>
     )
 }
 

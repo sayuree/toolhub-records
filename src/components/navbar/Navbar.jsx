@@ -1,22 +1,25 @@
 import React from 'react';
 import './navbar.css';
-import  { Link } from 'react-router-dom';
+import logo from '../../assets/toolhub_community_logo.svg';
 
 const Navbar  = () => {
     return(
-        <nav className="navbar">
-            <ul>
-                <Link to='/' className='home'>
-                    <li>Home</li>
-                </Link>
-                <Link to='/leaderboard' className='leaderboard'>
-                    <li>Leaderboard</li>
-                </Link>
-                <Link to='/dashboard' className='dashboard'>
-                    <li>Dashboard</li>
-                </Link>
-            </ul>
-        </nav>
+        <div className='navbar'>
+            <div className='navbar-links'>
+                <div className='navbar-links_logo'>
+                    <img src={logo} alt="Toolhub Community Logo"/>
+                </div>
+                <div className='navbar-links_container'>
+                    <p><a href="#home">Home</a></p>
+                    <p><a href="#leaderboard">Leaderboard</a></p>
+                    <p><a href="#dashboard">Dashboard</a></p>
+                </div>
+                <div className='navbar-sign'>
+                    <p>Log in</p>
+                    <button type='button'>Sign up</button>
+                </div>
+            </div>
+        </div>
     );
 }
 
