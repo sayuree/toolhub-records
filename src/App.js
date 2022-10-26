@@ -1,5 +1,5 @@
 import React from 'react';
-import {Navbar, Home} from './components'
+import { Navbar, Leaderboard } from './components'
 import './App.css';
 
 const App = () => {
@@ -7,6 +7,7 @@ const App = () => {
         <div className='App'>
             <div className='gradient__bg'>
                 <Navbar/>
+                <Leaderboard/>
             </div>
         </div>
     )
