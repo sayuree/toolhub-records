@@ -1,0 +1,26 @@
+.tool-main__container {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+}
+
+.tool-main__inner-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 5px;
+    margin: 1.5rem 2.5rem;
+}
+
+.tool-main__inner-container p {
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 25px;
+    color: #808080;
+}
+
+.tool-main__inner-container h2 {
+    padding: 0.5rem 1.0rem;
+}
