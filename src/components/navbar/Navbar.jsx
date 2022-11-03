@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { RiMenu3Line, RiCloseLine } from 'react-icons/ri';
+import { Link } from 'react-router-dom';
 import './navbar.css';
 import logo from '../../assets/toolhub_community_logo.svg';
 
@@ -13,9 +14,9 @@ const Navbar  = () => {
                     <img src={logo} alt="Toolhub Community Logo"/>
                 </div>
                 <div className='navbar-links_container'>
-                    <p><a href="#home">Home</a></p>
-                    <p><a href="#leaderboard">Leaderboard</a></p>
-                    <p><a href="#dashboard">Dashboard</a></p>
+                    <p><Link to="/">Home</Link></p>
+                    <p><Link to="/leaderboard">Leaderboard</Link></p>
+                    <p><Link to="/dashboard">Dashboard</Link></p>
                 </div>
                 <div className='navbar-sign'>
                     <p>Log in</p>
